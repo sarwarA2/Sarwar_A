@@ -1,0 +1,18 @@
+    <p>form works!</p>
+    <form #loginFrom="ngForm" (ngSubmit)=userLogin(loginFrom.value)>
+        <input type="text" name="name" placeholder="Enter-name" ngModel/><br><br>
+        <input type="email" name="email" placeholder="Enter-email" ngModel/><br><br>
+        <input type="mobile-number" name="mobile-number" placeholder="Enter-mobile" ngModel/><br><br>
+       
+        <input type="radio"  name="Gender" value="male" ngModel>male
+        <input type="radio"  name="Gender" value="female" ngModel>female
+        <input type="radio"  name="Gender" value="other" ngModel>other<br><br>
+        <select name="programing  language" id="language" ngModel >
+            <option value="c#" >c#</option>
+            <option value="html" >html</option>
+            <option value="java" >java</option>
+        </select><br><br>
+
+        <input type="texarea" name="texarea" ngModel><br><br>
+        <button>login</button>
+    </form>

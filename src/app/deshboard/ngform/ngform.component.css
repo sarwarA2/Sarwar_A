@@ -1,0 +1,11 @@
+
+.row{
+    width: 0px;
+    justify-content: center;
+    text-align: center;
+    margin-left: 350px;
+}
+.btn{
+    margin-top: 10px;
+    margin-left: 350px;
+}  

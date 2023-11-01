@@ -1,0 +1,61 @@
+<p>check works!</p>
+<!-- user name:
+<input type="text" name="name" value={{MyName1}}/><br><br>
+user password:
+<input type="password" name="password" value={{Password}}/><br><br>
+mobile no:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+<input type="phone-number" name="phone-number" value={{MobileNo}}/> -->
+<!-- singer:      
+<input type="text" name="name" [value]=SingerName/><br><br>
+work:
+<input type="text" name="work" [value]=Work/> -->
+<!-- input text:
+<input type="text" [(ngModel)]= "MyName"/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+<h2>{{MyName}}</h2>
+input email:
+<input type="email" [(ngModel)]="Email">
+<h2>{{Email}}</h2>
+input Mobile:
+<input type="phone-number" [(ngModel)]= "Mobile"/>
+<h2>{{Mobile}}</h2>  -->
+ 
+<form #contactForm="ngForm" (ngSubmit)="getUserSubmit(contactForm.value)" >
+ 
+    <p>
+
+      <label for="firstname">First Name</label>
+      <input type="text" id="firstname" name="firstname"  ngModel>
+    </p>
+   
+    <p>
+      <label for="lastname">Last Name</label>
+      <input type="text" id="lastname" name="lastname" ngModel>
+    </p>
+   
+    <p>
+      <label for="email">Email </label>
+      <input type="text" id="email" name="email" ngModel>
+    </p>
+   
+    <p>
+      <label for="gender">Geneder</label>
+      <input type="radio" value="male" id="gender" name="gender" ngModel> Male
+      <input type="radio" value="female" id="gender" name="gender" ngModel> Female
+    </p>
+   
+    <p>
+      <label for="isMarried">Married</label>
+      <input type="checkbox" id="isMarried" name="isMarried" ngModel>
+    </p>
+    <p>
+      <label for="isUNMarried">UNMarried</label>
+      <input type="checkbox" id="isUNMarried" name="isUNMarried" ngModel>
+    </p>
+   
+    <p>
+      <button type="submit">Submit</button>
+    </p>
+   
+  </form>
+   
+  
